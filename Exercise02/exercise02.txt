@@ -1,1 +1,113 @@
+Exercise 02
+ Model 1 - Mistral Le Chat
+
+Prompt 1
+Explain overfitting in machine learning in very simple English, with one real-life example.
+
+Response
+"**Overfitting in Machine Learning (Simple Explanation):**
+Overfitting is when a machine learning model learns the training data too well—including all the tiny, random details—so it performs poorly on new, unseen data.
+**Real-life example:**
+Imagine a student memorizes all the answers to past exam papers (training data) but fails a new test because they didn't actually understand the concepts. The model (or student) "overfitted" to the examples and can't generalize.
+In short: Overfitting = memorizing instead of learning."
+
+Prompt 2
+Give me a simple Python example of a machine learning model that predicts whether a student will pass or fail based on study hours. Explain the code briefly.
+
+Response
+"Here’s a simple Python example using scikit-learn to build a logistic regression model that predicts whether a student will pass (1) or fail (0) based on their study hours.
+Example Code
+# Import required libraries
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+
+# Sample data: study hours and pass/fail (0 = fail, 1 = pass)
+X = np.array([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]])  # Study hours
+y = np.array([0, 0, 0, 0, 1, 0, 1, 1, 1, 1])                      # Pass (1) or Fail (0)
+
+# Create and train the model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Predict for a new student
+new_study_hours = np.array([[6]])
+prediction = model.predict(new_study_hours)
+probability = model.predict_proba(new_study_hours)
+
+print(f"Prediction for {new_study_hours[0][0]} hours: {'Pass' if prediction[0] == 1 else 'Fail'}")
+print(f"Probability of passing: {probability[0][1]:.2f}")
+
+
+
+Explanation
+Data: X is the study hours, y is the label (0 or 1).
+Model: Logistic Regression is used for binary classification.
+Training: model.fit(X, y) trains the model on the data.
+Prediction: model.predict() gives the class (0 or 1), and model.predict_proba() gives the probability of each class.
+Note: This is a minimal example. In practice, you should split your data into training and test sets, and evaluate the model’s performance."
+
+
+3. Model 2 - Claude
+
+Prompt 1
+Explain overfitting in machine learning in very simple English, with one real-life example.
+
+Response
+"Overfitting is when a machine learning model learns the training data too well — including its noise and random quirks — so it performs great on the data it was trained on, but poorly on new, unseen data. It "memorizes" instead of "understanding."
+
+Simple analogy:
+
+Imagine a student preparing for a math exam. Instead of understanding the concepts, they memorize the exact answers to the 20 practice problems their teacher gave them.
+
+On those exact 20 problems: they get 100% ✅
+On the real exam, which has similar but slightly different problems: they fail ❌
+
+Why? Because they memorized specific answers instead of learning the underlying method to solve any problem of that type.
+
+That's overfitting — the model (or student) fits too closely to the examples it saw, and fails to generalize to new situations.
+
+Quick contrast:
+
+Underfitting = the student didn't study enough, so they do poorly on both practice and real exams.
+Good fit = the student understood the concepts, so they do well on practice and new problems.
+Overfitting = the student memorized answers, so they do great on practice but poorly on new problems."
+
+Prompt 2
+Give me a simple Python example of a machine learning model that predicts whether a student will pass or fail based on study hours. Explain the code briefly.
+
+Response
+"Here's a simple example using logistic regression (a common algorithm for yes/no predictions) with scikit-learn.
+
+python
+import numpy as np
+from sklearn.linear_model import LogisticRegression
+
+# Study hours (input feature)
+X = np.array([[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]])
+
+# Pass (1) or Fail (0) — the label/target
+y = np.array([0, 0, 0, 0, 1, 1, 1, 1, 1, 1])
+
+# Create and train the model
+model = LogisticRegression()
+model.fit(X, y)
+
+# Predict for a new student who studied 4.5 hours
+hours = [[4.5]]
+prediction = model.predict(hours)
+probability = model.predict_proba(hours)
+
+print("Pass" if prediction[0] == 1 else "Fail")
+print(f"Probability of passing: {probability[0][1]:.2f}")
+
+Brief explanation:
+
+X — the input data: hours each student studied.
+y — the labels: whether they passed (1) or failed (0), based on past data.
+LogisticRegression() — creates the model. Despite the name, it's used for classification (yes/no), not predicting numbers.
+model.fit(X, y) — this is the "training" step. The model looks at the pattern between study hours and pass/fail, and learns a threshold (roughly "around 4-5 hours seems to be the tipping point").
+model.predict() — uses what it learned to guess the outcome for a new, unseen value (4.5 hours).
+predict_proba() — gives the confidence behind that prediction (e.g., 62% chance of passing) instead of just a flat yes/no.
+
+Connecting to overfitting: with only 10 data points here, if you used an overly complex model, it could easily overfit — perfectly memorizing this exact list of 10 students but failing to predict well for new students. Logistic regression on a simple case like this tends to generalize reasonably well since it just fits a smooth curve rather than memorizing individual points."
 
