@@ -1,1 +1,256 @@
+# Exercise 03
 
+## Prompt Used
+
+How can I use generative AI as a university student to learn subjects like Probability and Statistics, Database Management Systems, and Software Engineering?
+
+---
+
+# 1. DeepSeek - DeepThink / Reasoning
+
+## Response
+
+As a university student, generative AI can act as a 24/7 teaching assistant if it is used correctly. The main idea is to use AI as a tutor to build understanding rather than as a tool to complete work without learning.
+
+### Universal Prompting Framework
+
+DeepSeek suggested three useful prompting methods:
+
+1. **Feynman Technique**
+   Ask AI to explain a difficult concept in very simple language first and then gradually increase the level of detail.
+
+2. **Socratic Tutor**
+   Ask AI not to provide the direct answer but instead guide you using questions.
+
+3. **Debugger**
+   Give AI your own attempt at solving a problem and ask it to identify where your reasoning went wrong.
+
+### Probability and Statistics
+
+Generative AI can help with:
+
+* Visualizing abstract statistical concepts using Python or R.
+* Understanding hypothesis tests such as Z-test, T-test, Chi-Squared test, and ANOVA.
+* Learning Bayesian reasoning using real-world examples.
+* Understanding regression results such as R-squared, p-values, and F-statistics.
+* Generating practice problems.
+
+An important warning is that LLMs may make arithmetic mistakes. Therefore, AI should mainly be used for conceptual explanations and generating code, while calculations should be verified separately.
+
+### Database Management Systems
+
+AI can help with:
+
+* Database normalization from 1NF to 3NF.
+* SQL query optimization.
+* Understanding indexing strategies.
+* Designing relational schemas.
+* Converting ER designs into SQL.
+* Understanding ACID transactions.
+* Learning about deadlocks and isolation levels.
+
+It is important to specify which DBMS is being used because SQL syntax may differ between systems such as PostgreSQL, MySQL, SQL Server, and Oracle.
+
+### Software Engineering
+
+AI can help students with:
+
+* UML and diagram generation.
+* Design patterns.
+* System architecture.
+* Code reviews.
+* Identifying security vulnerabilities.
+* Writing unit tests.
+* Agile development concepts.
+* Writing acceptance criteria.
+
+DeepSeek recommends treating AI as a senior lab partner that can provide ideas and feedback, while the student should verify and understand everything.
+
+---
+
+# 2. Qwen - Thinking Mode
+
+## Response
+
+Qwen explained that generative AI can work as a personalized tutor, study partner, and project collaborator when used ethically.
+
+### Probability and Statistics
+
+AI can be used for:
+
+* Simplifying complex concepts using analogies.
+* Step-by-step problem solving.
+* Creating custom practice quizzes.
+* Learning statistics using Python libraries such as Pandas and SciPy.
+* Understanding ANOVA, hypothesis testing, distributions, and other statistical concepts.
+
+Instead of asking AI for the complete solution immediately, students can ask for hints and guidance.
+
+### Database Management Systems
+
+AI can support learning through:
+
+* Schema design and normalization.
+* SQL generation and debugging.
+* Understanding window functions.
+* Understanding concurrency and transactions.
+* Learning isolation levels.
+* Creating ER diagrams using Mermaid.js.
+
+AI can simulate database scenarios and explain what happens during transactions and deadlocks.
+
+### Software Engineering
+
+AI can help with:
+
+* Learning design patterns.
+* Reviewing and refactoring code.
+* Understanding SOLID principles.
+* Gathering requirements.
+* Creating user stories.
+* Designing software systems.
+* Understanding APIs and architecture.
+
+### Best Practices
+
+Qwen recommended:
+
+1. Use AI as a Socratic tutor.
+2. Verify AI-generated information.
+3. Use code interpreters for mathematical calculations when possible.
+4. Maintain academic integrity.
+5. Build a personal library of useful prompts.
+
+### Recommended Workflow
+
+1. Attend the lecture and take notes.
+2. Identify concepts that are difficult to understand.
+3. Use AI to explain those specific areas.
+4. Solve problems manually.
+5. Ask AI to review the final solution and suggest improvements.
+
+---
+
+# 3. Grok - DeepSearch
+
+## Response
+
+Grok explained that generative AI works best as an interactive tutor that explains concepts, generates practice material, helps debug thinking, and adapts to the student's level.
+
+### General Study Habits
+
+Students can:
+
+* Use AI as a Socratic tutor.
+* Generate practice problems of increasing difficulty.
+* Create flashcards and quizzes.
+* Ask for multiple explanations of the same concept.
+* Cross-check answers using textbooks and lecture notes.
+* Clearly specify their knowledge level when writing prompts.
+
+### Probability and Statistics
+
+AI can help with:
+
+* Random variables and probability distributions.
+* Expectation and variance.
+* Conditional probability.
+* Bayes' theorem.
+* Hypothesis testing.
+* Confidence intervals.
+* Central Limit Theorem.
+* Mathematical derivations.
+* Practice question generation.
+* Python and R simulations.
+* Exam preparation.
+* Data analysis.
+
+Students should verify formulas and calculations rather than trusting every AI response.
+
+### Database Management Systems
+
+AI can help students understand:
+
+* Relational databases.
+* ER diagrams.
+* Normalization.
+* ACID properties.
+* Transactions.
+* Concurrency control.
+* Indexing.
+* Query optimization.
+* SQL joins.
+* B+ tree indexes.
+* Deadlocks.
+* Isolation levels.
+
+Students should execute SQL themselves in a real DBMS instead of trusting AI-generated outputs.
+
+### Software Engineering
+
+AI can help with:
+
+* SDLC models.
+* Agile and DevOps.
+* Requirements engineering.
+* UML diagrams.
+* Design patterns.
+* SOLID principles.
+* Software testing.
+* Version control.
+* Software architecture.
+* Code review.
+* Unit test generation.
+* Project planning.
+
+The student should still write and understand the core logic themselves.
+
+### Suggested Study Workflow
+
+1. Attend the lecture and create personal notes.
+2. Give difficult topics to AI for clarification.
+3. Generate self-test questions.
+4. Attempt the questions independently.
+5. Ask AI to review mistakes.
+6. Practice using harder questions or projects.
+7. Create a summary or flashcards for revision.
+
+---
+
+# Comparison of the Three Models
+
+All three models provided useful information, but they had slightly different strengths.
+
+**DeepSeek** provided very practical prompting techniques such as the Feynman Technique, Socratic Tutor, and Debugger approach. It also provided many specific prompts that could immediately be used while studying.
+
+**Qwen** provided a very organized and easy-to-follow response. Its recommended workflow of attending lectures, identifying gaps, consulting AI, applying knowledge manually, and reviewing the work was particularly useful.
+
+**Grok** provided the widest overall coverage. It included general study habits, detailed examples for all three subjects, exam preparation, practical database work, software engineering activities, and academic-integrity warnings.
+
+---
+
+# Reflection
+
+I found all three tools useful, but each tool had a different style.
+
+DeepSeek was useful because it gave specific prompting techniques that encourage me to think instead of simply receiving answers. I especially liked the Socratic Tutor approach because it can help me develop my own problem-solving ability.
+
+Qwen was useful because its response was organized and easy to understand. The recommended learning workflow showed how AI can be combined with lectures and independent practice.
+
+Grok was useful because it provided many different practical ways to use generative AI, including quizzes, simulations, SQL practice, code review, UML, system design, and spaced repetition.
+
+## Best Result
+
+In my opinion, **DeepSeek produced the best result**.
+
+The main reason is that it did not only explain what generative AI can do. It provided practical prompt structures and showed how to use AI as a tutor, debugger, and learning partner. These approaches can help me understand subjects while avoiding overdependence on AI.
+
+However, Qwen and Grok were also useful. Qwen had a very clear learning workflow, while Grok provided the broadest collection of study techniques.
+
+## Conclusion
+
+Generative AI can be a powerful learning tool for Probability and Statistics, Database Management Systems, and Software Engineering when it is used responsibly.
+
+It should be used to explain concepts, generate practice questions, review work, debug problems, and explore different solutions. Students should not depend on AI for every answer or submit AI-generated work without understanding it.
+
+The best approach is to use generative AI as a learning assistant while continuing to use lectures, textbooks, practical exercises, and independent problem solving.
